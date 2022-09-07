@@ -1,0 +1,9 @@
+extend type Query {
+  Friendship(id: ID!): Friendship
+}
+
+extend type Mutation {
+  createFriendship(input: CreateFriendshipInput!): Friendship!
+  updateFriendship(id: ID!, input: UpdateFriendshipInput!): Friendship!
+  deleteFriendship(id: ID!): Friendship!
+}
